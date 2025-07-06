@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Interactive Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#home" class="logo">Your Name</a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+                <p>I am a <span id="typing-effect"></span></p>
+                <a href="#portfolio" class="cta-button">View My Work</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="https://via.placeholder.com/250" alt="Your Profile Picture" class="profile-pic">
+                <div>
+                    <h3>Who I Am</h3>
+                    <p>Hello! I am a passionate and creative professional based in [Your City]. I specialize in [Your Field/Specialty]. I have a love for creating beautiful and functional things. This is a placeholder text, so feel free to write a couple of paragraphs about your journey, your passions, and what drives you in your professional life.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>My Portfolio</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+                <button class="filter-btn" data-filter="app">App Development</button>
+            </div>
+            <div class="portfolio-gallery">
+                <div class="project-card" data-category="web">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://via.placeholder.com/400x300/CCCCCC/FFFFFF?text=Project+One" alt="Project One">
+                            <p>Project One - Web</p>
+                        </div>
+                        <div class="card-back">
+                            <h4>Project One Details</h4>
+                            <p>A brief description of this amazing web development project. Explain the technology used and the project's goal.</p>
+                            <a href="#" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="graphic">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://via.placeholder.com/400x300/AFAFAF/FFFFFF?text=Project+Two" alt="Project Two">
+                            <p>Project Two - Graphic</p>
+                        </div>
+                        <div class="card-back">
+                            <h4>Project Two Details</h4>
+                            <p>A brief description of this stunning graphic design project. Mention the tools you used, like Adobe Illustrator or Photoshop.</p>
+                            <a href="#" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="app">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://via.placeholder.com/400x300/8E8E8E/FFFFFF?text=Project+Three" alt="Project Three">
+                            <p>Project Three - App</p>
+                        </div>
+                        <div class="card-back">
+                            <h4>Project Three Details</h4>
+                            <p>A brief description of this innovative app development project. What problem does it solve? What was your role?</p>
+                            <a href="#" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <p>HTML & CSS</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 0;" data-level="90%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>JavaScript</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 0;" data-level="80%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>UI/UX Design</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 0;" data-level="85%"></div>
+                    </div>
+                </div>
+                 </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
